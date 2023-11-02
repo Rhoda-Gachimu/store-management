@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/loginsignup.css" />
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/loginsignup.css">
     <title>login</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container" id="login-form">
-      <h2>Login</h2>
-      <form id="login-form" action="login.php" method="post">
-        <div class="form-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-
-      <div class="switch">
-        <p>Don't have an account? <a href="#signup-form">Sign Up</a></p>
+    <h2>Login</h2>
+    <form id="login-form" action="login.php" method="post">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
       </div>
-    </div>
-
-    <div class="container" id="signup-form" style="display: none">
-      <h2>Sign Up</h2>
-      <form id="signup-form" action="signup.php" method="post">
-        <div class="form-group">
-          <label for="new-username">Username</label>
-          <input type="text" id="new-username" name="new-username" required />
-        </div>
-        <div class="form-group">
-          <label for="new-password">Password</label>
-          <input
-            type="password"
-            id="new-password"
-            name="new-password"
-            required
-          />
-        </div>
-        <button type="submit">Sign Up</button>
-      </form>
-
-      <div class="switch">
-        <p>Already have an account? <a href="#login-form">Login</a></p>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
       </div>
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="switch">
+      <p>Don't have an account? <a href="#signup-form">Sign Up</a></p>
     </div>
-    <script src="/assets/js/loginsignup.js"></script>
-  </body>
+  </div>
+
+  <div class="container" id="signup-form" style="display: none;">
+    <h2>Sign Up</h2>
+    <form id="signup-form" action="signup.php" method="post">
+      <div class="form-group">
+        <label for="new-username">Username</label>
+        <input type="text" id="new-username" name="new-username" required>
+      </div>
+      <div class="form-group">
+        <label for="new-password">Password</label>
+        <input type="password" id="new-password" name="new-password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="switch">
+      <p>Already have an account? <a href="#login-form">Login</a></p>
+    </div>
+  </div>
+  <script src="./assets/js/loginsignup.js"></script>
+</body>
 </html>
