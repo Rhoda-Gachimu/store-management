@@ -18,4 +18,21 @@ function addProduct(){
     saveData()
     }
 
-    
+    list.addEventListener("click",function(e){
+        if (e.target.tagName === "LI"){
+            e.target.classList.toggle("new");
+            saveData()
+        }else if(e.target.tagName === "SPAN"){
+            e.target.parentElement.remove();
+            saveData()
+        }
+    },false);
+
+    function saveData(){
+        localStorage.setItem("data",list.innerHTML);
+    }
+
+    function displayProduct(){
+        list.innerHTML = localStorage.getItem("data")
+    }
+    displayProduct()
