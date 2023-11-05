@@ -80,6 +80,13 @@ button{
     
 }
 
+/* PRODUCTS */
+.products{
+    width: 85%;
+    margin: auto;
+    align-content: center;
+}
+
 /* FOOTER*/
 
 footer{
