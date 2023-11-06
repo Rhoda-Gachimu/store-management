@@ -83,9 +83,18 @@ button{
 /* PRODUCTS */
 .products{
     width: 85%;
-    margin: auto;
-    align-content: center;
+    margin: auto; 
 }
+.prod-tt{
+    text-align: center;
+    margin:20px 0px 40px;
+    color: #ed5625;
+}
+.products .container{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* FOOTER*/
 
